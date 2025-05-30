@@ -10,7 +10,7 @@ function App() {
 
       <section className="hero">
         <img 
-          src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=800&q=80" 
+          src="./public/images/banner.jpeg" 
           alt="Imagem representando animais" 
           className="hero-image"
         />
@@ -48,7 +48,7 @@ function App() {
       <section className="call-to-action">
         <h2>Assista agora</h2>
         <a 
-          href="https://youtube.com" 
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
           target="_blank" 
           className="watch-button"
         >
