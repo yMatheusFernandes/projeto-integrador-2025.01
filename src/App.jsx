@@ -1,4 +1,5 @@
 import './App.css'
+import banner from './assets/images/banner.jpeg';
 
 function App() {
   return (
@@ -9,11 +10,9 @@ function App() {
       </header>
 
       <section className="hero">
-        <img 
-          src="./public/images/banner.jpeg" 
-          alt="Imagem representando animais" 
-          className="hero-image"
-        />
+
+        <img src={banner} alt="Banner" className="hero-image" />
+
       </section>
 
       <section className="about">
