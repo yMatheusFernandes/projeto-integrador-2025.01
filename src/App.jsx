@@ -29,7 +29,7 @@ function App() {
       <section className="call-to-action">
         <h2>Assista agora</h2>
         <a 
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+          href="#" 
           target="_blank" 
           className="watch-button"
         >
