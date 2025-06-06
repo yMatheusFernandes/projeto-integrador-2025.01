@@ -18,29 +18,11 @@ function App() {
       <section className="about">
         <h2>Sobre o Documentário</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolore cum! Officiis sint illum, explicabo 
-          blanditiis fuga voluptas at eveniet facilis consequuntur natus assumenda tempora culpa, tempore beatae perfer
-          endis laboriosam?
-          Quia sint soluta tenetur quisquam dolorem eius voluptas vitae qui explicabo, id molestias, exercitationem aperi
-          am quo autem? At reprehenderit ipsam, odio quidem, maiores adipisci molestiae accusantium, reiciendis animi nemo iure.
-          Accusamus dolores officia consectetur placeat natus fugit totam iste numquam mollitia, officiis tempora neces
-          sitatibus esse, delectus quo ullam fuga illo debitis facere laborum! Provident maxime qui facere dignissimos tempo
-          ribus ea!
-          Et quas, cupiditate nobis dignissimos voluptatibus blanditiis. Ipsum aspernatur quis a soluta culpa quo 
-          velit? Dolorum, laborum! Architecto, a dignissimos quo laudantium sed dolore ratione vitae earum ipsa vol
-          uptatibus veritatis.
-          Dolore delectus obcaecati voluptate distinctio earum aspernatur, impedit voluptatem explicabo nesciunt qu
-          aerat suscipit facere illo molestias eaque hic. Laudantium ut repellat tempore odio quaerat a maxime iusto v
-          oluptate sunt inventore!
-          Pariatur, temporibus assumenda quibusdam eveniet deleniti tempora iusto quas quae. Dignissimos odio, accus
-          antium blanditiis necessitatibus sint quas temporibus enim reiciendis tempora corrupti error omnis ipsam, te
-          mpore, aspernatur modi. Adipisci, quo?
-          Aut aspernatur quo natus beatae totam! Quis impedit culpa placeat reprehenderit tempora dolorem exercitatione
-          m officiis deleniti, quia ullam voluptate ipsam repudiandae corrupti necessitatibus quam hic incidunt asperio
-          res aliquid a dicta?
-          Impedit reiciendis dicta excepturi et deleniti molestias delectus, alias architecto voluptas asperiores rep
-          udiandae temporibus assumenda? Consectetur blanditiis, dolorem, exercitationem perspiciatis est comm
-          odi, rerum excepturi natus soluta cupiditate numquam illum inventore?
+         Pelos e Garras Feridas é um site informativo vinculado a um projeto de extensão do IFPI – Campus Piripiri, que leva o mesmo nome. O objetivo do projeto é informar e conscientizar sobre a dura realidade enfrentada por animais abandonados e maltratados na cidade de Piripiri. Por meio de um documentário, apresentamos essa situação, infelizmente ainda recorrente, trazendo imagens do abrigo e um trailer exclusivo.
+         O grupo responsável pelo projeto foi dividido em setores, com alguns membros atuando na parte logística e outros na pesquisa de campo. Cada integrante contribuiu de forma significativa nas diversas etapas: programação, entrevistas, edição de vídeo e áudio, filmagens, elaboração do roteiro, relatórios, design e apresentação de slides.
+         Um cronograma foi elaborado para monitorar e registrar o progresso do projeto. O relatório final ainda está em fase de produção, mas será publicado em breve.
+         O documentário principal será disponibilizado no YouTube e contará com uma entrevista especial com a moradora e responsável pelo abrigo, Dona Socorro, que vive no bairro Prado. Para essa entrevista, foi elaborado um questionário com 18 perguntas específicas.
+         Para mais informações, deixaremos o link do vídeo completo, que leva diretamente ao YouTube.
         </p>
       </section>
 
