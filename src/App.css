@@ -1,18 +1,24 @@
+:root {
+  --cor-fundo-claro: #cce5f6;        /* Azul bem claro – fundo geral */
+  --cor-azul-destaque: #4a90e2;      /* Azul médio – header e footer */
+  --cor-amarelo-fundo: #fff8d6;      /* Amarelo clarinho – blocos */
+  --cor-amarelo-vibrante: #fdd835;   /* Amarelo vivo – botões, ênfase */
+  --cor-amarelo-hover: #fbc02d;      /* Amarelo mais forte para hover */
+  --cor-texto-principal: #333;       /* Cinza escuro – textos */
+  --cor-branco: #ffffff;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
-}
-
-.hero > img {
-  max-width: 70%;
+  background: var(--cor-fundo-claro);
+  color: var(--cor-texto-principal);
 }
 
 header {
-  background-color: #222;
-  color: #fff;
+  background-color: var(--cor-azul-destaque);
+  color: var(--cor-branco);
   padding: 2rem;
   text-align: center;
 }
@@ -23,16 +29,25 @@ header {
 }
 
 .hero-image {
-  max-width: 90%;
+  width: 65%;
+  height: 65%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 90%;
+  }
 }
 
 .about, .call-to-action {
-  margin: 2rem;
+  max-width: 70%;
+  margin: 2rem auto;
   padding: 1rem;
-  background: #fff;
+  background: var(--cor-amarelo-fundo);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -40,8 +55,8 @@ header {
 .watch-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #e63946;
-  color: white;
+  background: var(--cor-amarelo-vibrante);
+  color: var(--cor-texto-principal);
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -49,13 +64,35 @@ header {
 }
 
 .watch-button:hover {
-  background: #d62828;
+  background: var(--cor-amarelo-hover);
 }
 
 footer {
-  background: #222;
-  color: #fff;
+  background: var(--cor-azul-destaque);
+  color: var(--cor-branco);
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 1rem;
   margin-top: 2rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor-amarelo-vibrante);
+}
+
+footer a {
+  color: var(--cor-amarelo-fundo);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--cor-amarelo-vibrante);
+  text-decoration: underline;
+}
+
+footer strong {
+  color: var(--cor-amarelo-vibrante);
 }

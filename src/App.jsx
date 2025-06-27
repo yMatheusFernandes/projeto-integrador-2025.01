@@ -1,18 +1,21 @@
 import './App.css'
 import banner from './assets/images/banner.jpeg';
+import banner2 from './assets/images/banner2.png'
 
 function App() {
   return (
     <>
       <header>
         <h1>Pelos e Garras Feridas</h1>
+        <h2>-Protetores de piripiri-</h2>
         <p>Um olhar profundo sobre os maus-tratos aos animais</p>
       </header>
 
       <section className="hero">
 
+        <img src={banner2} alt="Banner2" className="hero-image" />
         <img src={banner} alt="Banner" className="hero-image" />
-
+        
       </section>
 
       <section className="about">
@@ -37,9 +40,24 @@ function App() {
         </a>
       </section>
 
-      <footer>
-        <p>© 2025 Pelos e Garras Feridas | Todos os direitos reservados</p>
-      </footer>
+<footer>
+  <p>&copy; 2025 Garras e Pelos Feridos | Todos os direitos reservados.</p>
+
+  <section>
+    <h3>Contribua com uma doação</h3>
+    <p><strong>Chave Pix:</strong> socorroprotetorapiaui@gmail.com</p>
+  </section>
+
+  <section>
+    <h3>Siga nossas redes sociais</h3>
+    <p>
+      <a href="https://www.instagram.com/protetoresdepiripiri?utm_source=qr&igsh=MTI2NzF0NHhxbXdwaw==" target="_blank" rel="noopener noreferrer">
+        Instagram: @protetoresdepiripiri
+      </a>
+    </p>
+  </section>
+</footer>
+
     </>
   )
 }
