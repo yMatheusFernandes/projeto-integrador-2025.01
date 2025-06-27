@@ -2,6 +2,7 @@ import './App.css'
 import banner from './assets/images/banner.jpeg';
 import banner2 from './assets/images/banner2.png'
 
+
 function App() {
   return (
     <>
@@ -48,14 +49,14 @@ function App() {
     <p><strong>Chave Pix:</strong> socorroprotetorapiaui@gmail.com</p>
   </section>
 
-  <section>
-    <h3>Siga nossas redes sociais</h3>
-    <p>
-      <a href="https://www.instagram.com/protetoresdepiripiri?utm_source=qr&igsh=MTI2NzF0NHhxbXdwaw==" target="_blank" rel="noopener noreferrer">
-        Instagram: @protetoresdepiripiri
-      </a>
-    </p>
-  </section>
+<section>
+  <h3>Siga nossas redes sociais</h3>
+  <p>
+    <a class="botao-instagram" href="https://www.instagram.com/protetoresdepiripiri?utm_source=qr&igsh=MTI2NzF0NHhxbXdwaw==" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i> @protetoresdepiripiri
+    </a>
+  </p>
+</section>
 </footer>
 
     </>

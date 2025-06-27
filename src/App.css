@@ -96,3 +96,28 @@ footer a:hover {
 footer strong {
   color: var(--cor-amarelo-vibrante);
 }
+
+.botao-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  color: var(--cor-azul-destaque);
+  padding: 10px 16px;
+  border: 2px solid var(--cor-azul-destaque);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.botao-instagram:hover {
+  background-color: var(#051f3d);
+  background-color: #1f5088;
+  color: rgb(5, 9, 51);
+}
+
+.botao-instagram i {
+  font-size: 1.2em;
+}
