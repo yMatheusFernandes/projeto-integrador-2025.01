@@ -1,5 +1,4 @@
 import './App.css'
-import banner from './assets/images/banner.jpeg';
 import banner2 from './assets/images/banner2.png'
 
 
@@ -15,7 +14,6 @@ function App() {
       <section className="hero">
 
         <img src={banner2} alt="Banner2" className="hero-image" />
-        <img src={banner} alt="Banner" className="hero-image" />
         
       </section>
 
@@ -33,7 +31,7 @@ function App() {
       <section className="call-to-action">
         <h2>Assista agora</h2>
         <a 
-          href="#" 
+          href="https://youtu.be/5pWjOClrXvc?si=WBIFTtQyP96JM5G-" 
           target="_blank" 
           className="watch-button"
         >
