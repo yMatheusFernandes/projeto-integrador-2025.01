@@ -30,7 +30,6 @@ header {
 
 .hero-image {
   width: 65%;
-  height: 65%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -61,10 +60,49 @@ header {
   border-radius: 5px;
   font-weight: bold;
   margin-top: 1rem;
+  transition: background 0.3s ease;
 }
 
 .watch-button:hover {
   background: var(--cor-amarelo-hover);
+}
+
+.video-player {
+  max-width: 70%;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--cor-amarelo-fundo);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: var(--cor-texto-principal);
+}
+
+.video-player h2 {
+  margin-bottom: 1rem;
+  color: var(--cor-azul-destaque);
+  font-weight: bold;
+}
+
+.video-player video {
+  width: 100%;
+  max-width: 640px;
+  max-height: 400px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .video-player {
+    max-width: 90%;
+  }
+  .about, .call-to-action {
+    max-width: 90%;
+  }
 }
 
 footer {
@@ -113,7 +151,6 @@ footer strong {
 }
 
 .botao-instagram:hover {
-  background-color: var(#051f3d);
   background-color: #1f5088;
   color: rgb(5, 9, 51);
 }
