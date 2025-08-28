@@ -1,68 +1,174 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --cor-fundo-claro: #cce5f6;
+  --cor-azul-destaque: #4a90e2;
+  --cor-amarelo-fundo: #fff8d6;
+  --cor-amarelo-vibrante: #fdd835;
+  --cor-amarelo-hover: #fbc02d;
+  --cor-texto-principal: #333;
+  --cor-branco: #ffffff;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: var(--cor-fundo-claro);
+  color: var(--cor-texto-principal);
+  font-family: Arial, sans-serif;
+  display: block; /* impede conflito com index.css que usava flex */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* HEADER */
+header {
+  background-color: var(--cor-azul-destaque);
+  color: var(--cor-branco);
+  padding: 2rem;
+  text-align: center;
 }
 
-button {
+header h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.hero-image {
+  width: 65%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: width 0.3s ease;
+  max-width: 100%;
+}
+
+/* SEÇÕES */
+.about, .call-to-action, .video-player {
+  max-width: 70%;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--cor-amarelo-fundo);
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* BOTÃO */
+.watch-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--cor-amarelo-vibrante);
+  color: var(--cor-texto-principal);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+.watch-button:hover {
+  background: var(--cor-amarelo-hover);
+}
+
+/* VIDEO PLAYER */
+.video-player h2 {
+  margin-bottom: 1rem;
+  color: var(--cor-azul-destaque);
+  font-weight: bold;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+.video-player {
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 0;
+  background: var(--cor-amarelo-fundo);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Container responsivo */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 = 9/16 = 0.5625 */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Iframe ocupa todo o espaço do container */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* FOOTER */
+footer {
+  background: var(--cor-azul-destaque);
+  color: var(--cor-branco);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+footer h3 {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-bottom: 0.5rem;
+  color: var(--cor-amarelo-vibrante);
+}
+footer a {
+  color: var(--cor-amarelo-fundo);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--cor-amarelo-vibrante);
+  text-decoration: underline;
+}
+footer strong {
+  color: var(--cor-amarelo-vibrante);
+}
+
+/* BOTÃO INSTAGRAM */
+.botao-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  color: var(--cor-azul-destaque);
+  padding: 10px 16px;
+  border: 2px solid var(--cor-azul-destaque);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+.botao-instagram:hover {
+  background-color: #1f5088;
+  color: rgb(5, 9, 51);
+}
+.botao-instagram i {
+  font-size: 1.2em;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1024px) {
+  .about, .call-to-action, .video-player { max-width: 80%; }
+}
+@media (max-width: 768px) {
+  .hero-image { width: 90%; }
+  .about, .call-to-action, .video-player { max-width: 90%; padding: 0.8rem; }
+}
+@media (max-width: 480px) {
+  header { padding: 1rem; }
+  .watch-button { padding: 0.8rem 1.5rem; }
+  .botao-instagram { padding: 8px 12px; gap: 6px; }
 }

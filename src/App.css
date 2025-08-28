@@ -1,10 +1,10 @@
 :root {
-  --cor-fundo-claro: #cce5f6;        /* Azul bem claro – fundo geral */
-  --cor-azul-destaque: #4a90e2;      /* Azul médio – header e footer */
-  --cor-amarelo-fundo: #fff8d6;      /* Amarelo clarinho – blocos */
-  --cor-amarelo-vibrante: #fdd835;   /* Amarelo vivo – botões, ênfase */
-  --cor-amarelo-hover: #fbc02d;      /* Amarelo mais forte para hover */
-  --cor-texto-principal: #333;       /* Cinza escuro – textos */
+  --cor-fundo-claro: #cce5f6;
+  --cor-azul-destaque: #4a90e2;
+  --cor-amarelo-fundo: #fff8d6;
+  --cor-amarelo-vibrante: #fdd835;
+  --cor-amarelo-hover: #fbc02d;
+  --cor-texto-principal: #333;
   --cor-branco: #ffffff;
 }
 
@@ -14,8 +14,10 @@ body {
   padding: 0;
   background: var(--cor-fundo-claro);
   color: var(--cor-texto-principal);
+  line-height: 1.6;
 }
 
+/* HEADER */
 header {
   background-color: var(--cor-azul-destaque);
   color: var(--cor-branco);
@@ -23,6 +25,11 @@ header {
   text-align: center;
 }
 
+header h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* escala fluida */
+}
+
+/* HERO */
 .hero {
   text-align: center;
   margin: 2rem 0;
@@ -34,23 +41,24 @@ header {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: width 0.3s ease;
+  max-width: 100%;
 }
 
-@media (max-width: 768px) {
-  .hero-image {
-    width: 90%;
-  }
-}
-
-.about, .call-to-action {
+/* TEXTOS E SEÇÕES */
+.about, .call-to-action, .video-player {
   max-width: 70%;
   margin: 2rem auto;
   padding: 1rem;
   background: var(--cor-amarelo-fundo);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+.about h2, .call-to-action h2 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+/* BOTÃO */
 .watch-button {
   display: inline-block;
   padding: 1rem 2rem;
@@ -61,19 +69,15 @@ header {
   font-weight: bold;
   margin-top: 1rem;
   transition: background 0.3s ease;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 }
 
 .watch-button:hover {
   background: var(--cor-amarelo-hover);
 }
 
+/* PLAYER DE VÍDEO */
 .video-player {
-  max-width: 70%;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: var(--cor-amarelo-fundo);
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   text-align: center;
   color: var(--cor-texto-principal);
 }
@@ -82,29 +86,19 @@ header {
   margin-bottom: 1rem;
   color: var(--cor-azul-destaque);
   font-weight: bold;
+  font-size: clamp(1.2rem, 4vw, 2rem);
 }
 
 .video-player video {
   width: 100%;
   max-width: 640px;
-  max-height: 400px;
-  margin: 0 auto;
-  display: block;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   background-color: black;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .video-player {
-    max-width: 90%;
-  }
-  .about, .call-to-action {
-    max-width: 90%;
-  }
-}
-
+/* FOOTER */
 footer {
   background: var(--cor-azul-destaque);
   color: var(--cor-branco);
@@ -114,7 +108,7 @@ footer {
 }
 
 footer h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   margin-bottom: 0.5rem;
   color: var(--cor-amarelo-vibrante);
 }
@@ -135,6 +129,7 @@ footer strong {
   color: var(--cor-amarelo-vibrante);
 }
 
+/* BOTÃO INSTAGRAM */
 .botao-instagram {
   display: inline-flex;
   align-items: center;
@@ -148,6 +143,7 @@ footer strong {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
 .botao-instagram:hover {
@@ -157,4 +153,37 @@ footer strong {
 
 .botao-instagram i {
   font-size: 1.2em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .about, .call-to-action, .video-player {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem;
+  }
+  .hero-image {
+    width: 90%;
+  }
+  .about, .call-to-action, .video-player {
+    max-width: 90%;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+  .watch-button {
+    padding: 0.8rem 1.5rem;
+  }
+  .botao-instagram {
+    padding: 8px 12px;
+    gap: 6px;
+  }
 }

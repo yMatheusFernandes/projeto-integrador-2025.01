@@ -55,7 +55,7 @@ function App() {
 
             <section className="call-to-action">
                 <h2>Assista o vídeo</h2>
-                <div className="video-player">
+                <div className="video-wrapper">
                     <iframe
                         width="640"
                         height="360"
